@@ -22,3 +22,12 @@ names(ls1) <- c("Name", "LastName", "Age")
 ## Names to matrices
 dimnames(x) <- list(c("R1", "R2"), c("C1","C2","C3","C4","C5"))
 
+# ---
+## remove NA values
+x <- c(1,2,NA,4,NA,5)
+good <- complete.cases(x)
+x[good]
+
+
+
+
